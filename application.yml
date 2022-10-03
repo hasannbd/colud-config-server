@@ -1,0 +1,14 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+  instance:
+    hostname: localhost
+    
+microservices:
+  order-service:
+    base-url: http://ORDER-SERVICE
+  payment-service:
+    base-url: http://PAYMENT-SERVICE
